@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border width</title>
+    <style type="text/css">
+        body{
+            font-family: Arial, Verdana, Arial, Verdana, sans-serif;
+            color: #111111;
+        }
+        p{
+            width: 200px;
+            border-style: solid;
+        }
+        p.one{
+            border-width: 2px; /* độ rộng đường viền là 2px */
+        }
+        p.two{
+            border-width: thick; /* đường viền dày */
+        }
+        p.three{
+            border-width: 1px 4px 12px 4px; /* độ rộng trên là 1px, phải 4px, dưới 12px, trái 4px */
+        }
+    </style>
+</head>
+<body>
+  <p class="one">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+  <p class="two">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+  <p class="three">Hohner's "Clavinet" is essentially an electric clavichord.</p>
+</body>
+</html>

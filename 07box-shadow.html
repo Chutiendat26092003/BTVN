@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Shadow</title>
+    <style type="text/css">
+        p{ /* hộp rộng 100px, cao 100px, dườnd viền màu #e1ddda, lề 20px, các kiểu nội tuyến xuất hiện cạnh nhau  */
+            width: 100px;
+            height: 100px;
+            background-color: #e1ddda;
+            margin: 20px;
+            display: inline-block;
+        }
+        p.one{ /* viền rộng 5px kiểu bóng đậm màu #77777 ở trên và trái*/
+            -moz-box-shadow: -5px -5px #777777;
+            -webkit-box-shadow: -5px -5px #777777;
+            box-shadow: -5px -5px #777777;
+        }
+        p.two{ /* viền rộng 5px bóng mờ ở bên phải và dưới */
+            -moz-box-shadow: 5px 5px 5px #777777;
+            -webkit-box-shadow: 5px 5px 5px #777777;
+            box-shadow: 5px 5px 5px #777777;
+        }
+        p.three{ /* viền rộng 5px bóng đậm bên phải và dưới */
+            -moz-box-shadow: 5px 5px 5px 5px #777777;
+            -webkit-box-shadow: 5px 5px 5px 5px #777777;
+            box-shadow: 5px 5px 5px 5px #777777;
+        }
+        p.four{ /* viền bóng xuống cả 4 bên */
+            -moz-box-shadow: 0 0 10px #777777;
+            -webkit-box-shadow: 0 0 10px #777777;
+            box-shadow: 0 0 10px #777777;
+        }
+        p.five{ /*viền bóng vào trong cả 4 bên */
+            -moz-box-shadow: inset 0 0 10px #777777;
+            -webkit-box-shadow: inset 0 0 10px #777777;
+            box-shadow: inset 0 0 10px #777777;
+        }
+
+
+
+    </style>
+</head>
+<body>
+  <p class="one">ONE</p>
+  <p class="two">TWO</p>
+  <p class="three">THREE</p>
+  <br />
+  <p class="four">FOUR</p>
+  <p class="five">FIVE</p>
+
+</body>
+</html>
